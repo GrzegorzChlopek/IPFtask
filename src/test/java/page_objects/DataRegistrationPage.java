@@ -1,5 +1,4 @@
 package page_objects;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -8,9 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-
 import java.util.ArrayList;
 import java.util.List;
+import static user_data.UserDataForm.*;
 
 public class DataRegistrationPage {
 
@@ -22,19 +21,6 @@ public class DataRegistrationPage {
     }
 
     Logger logger = LogManager.getRootLogger();
-
-    String email = "testing@issue.com";
-    String password = "Test123";
-    String firstUserName = "John";
-    String lastUserName = "Nowak";
-    String newPassword = "Test123";
-    String companyName = "Big Data Systems";
-    String addressStreet = "Green Hills";
-    String addressNumber = "26";
-    String adressCity = "Tampa";
-    String postCode = "33610";
-    String mobilePhoneNumber = "+19177958197";
-    String alias = "BDS";
 
 
     @FindBy(id = "id_gender1")

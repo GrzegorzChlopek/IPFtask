@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import static user_data.UserDataSignIn.*;
 
 public class SingInPage {
 
@@ -17,9 +18,6 @@ public class SingInPage {
     }
 
     Logger logger = LogManager.getRootLogger();
-
-    String email = "testing@issue.com";
-    String password = "Test123";
 
     @FindBy(id = "email_create")
     private WebElement createNewAccountEmailField;
